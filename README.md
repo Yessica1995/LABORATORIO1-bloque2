@@ -1,5 +1,10 @@
 Laboratorio 1 - Banco Kay
 
+Integrantes:
+Astrid Marcela Arguello Guzman
+Ka<ren Beatriz Jandres Chaves
+Yessica Raquel Reyes Juarez
+
 Problemática planteada:
 El Banco KAY enfrenta desafíos operativos críticos en su sistema de gestión de flujo de clientes en sucursales físicas. El modelo actual basado en tickets de papel térmico ha generado una serie de ineficiencias que afectan tanto la experiencia del usuario como la sostenibilidad institucional. La pérdida o deterioro de los boletos físicos provoca constantes confusiones en el orden de atención, derivando en adelantos indebidos o retrasos significativos que alteran la cronología de los turnos. El uso masivo de papel no reciclable contraviene las políticas de responsabilidad ambiental y genera un gasto operativo constante en insumos de impresión.Para mitigar estos conflictos, se identifica la necesidad de una transición digital que centralice la asignación de turnos a través de una plataforma web accesible desde dispositivos móviles o terminales táctiles en el sitio. 
 

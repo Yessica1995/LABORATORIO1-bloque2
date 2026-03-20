@@ -2,53 +2,24 @@
 
 # Sistema de Turnos Digital – Banco KAY
 
-## Descripción del Proyecto
+Problemática planteada:
+El Banco KAY enfrenta desafíos operativos críticos en su sistema de gestión de flujo de clientes en sucursales físicas. El modelo actual basado en tickets de papel térmico ha generado una serie de ineficiencias que afectan tanto la experiencia del usuario como la sostenibilidad institucional. La pérdida o deterioro de los boletos físicos provoca constantes confusiones en el orden de atención, derivando en adelantos indebidos o retrasos significativos que alteran la cronología de los turnos. El uso masivo de papel no reciclable contraviene las políticas de responsabilidad ambiental y genera un gasto operativo constante en insumos de impresión.Para mitigar estos conflictos, se identifica la necesidad de una transición digital que centralice la asignación de turnos a través de una plataforma web accesible desde dispositivos móviles o terminales táctiles en el sitio. 
 
-Este proyecto consiste en una aplicación web desarrollada con **Vue.js** que permite gestionar turnos de atención dentro de una sucursal del **Banco KAY**.
+Los sectores enfocados:
+La situación problemática actual se centra en los siguientes 3 sectores:
 
-La aplicación permite a los usuarios registrar su turno digital ingresando su nombre y número de cuenta, evitando así el uso de tickets impresos en papel. También incluye un panel de gestión que permite visualizar la cola de espera y llamar al siguiente cliente.
+1- El sector Financiero: Para la optimización de la eficiencia operativa y mejora en los indicadores de servicio al cliente (CSAT).
 
----
+2- El sector Tecnológico (Desarrollo Web): Implementación de sistemas de gestión de colas (Queue Management Systems) basados en arquitectura web.
 
-# Problemática planteada
+3- El sector Ambiental (Sostenibilidad): Reducción directa de la huella de carbono mediante la eliminación de residuos de papel (Cero Papel).
 
-El Banco KAY enfrenta desafíos operativos en su sistema actual de gestión de turnos dentro de sus sucursales físicas. Actualmente se utilizan tickets impresos en papel térmico para asignar turnos a los clientes. Este sistema presenta varios problemas.
-
-Uno de los principales inconvenientes es que los clientes pueden perder o dañar su ticket, lo que genera confusión en el orden de atención. Esto provoca adelantos o retrasos en los turnos y genera inconformidad entre los usuarios.
-
-Además, el uso constante de papel térmico produce residuos que afectan el medio ambiente y generan gastos adicionales en insumos de impresión.
-
-Para solucionar este problema se propone desarrollar una aplicación web que permita generar **tickets digitales**, eliminar el uso de papel y mejorar la organización de la cola de atención dentro del banco.
-
----
-
-# Sectores enfocados
-
-La solución propuesta está enfocada en los siguientes sectores:
-
-### Sector Financiero
-
-Permite mejorar la organización del flujo de clientes dentro de las sucursales del banco, optimizando el tiempo de atención y mejorando la experiencia del usuario.
-
-### Sector Tecnológico (Desarrollo Web)
-
-La aplicación utiliza tecnologías modernas como **Vue.js** para implementar un sistema digital de gestión de turnos que permite actualizar la información en tiempo real.
-
-### Sector Ambiental
-
-Al eliminar el uso de tickets impresos, se reduce el consumo de papel térmico y se contribuye a una política institucional de **cero papel**, favoreciendo la sostenibilidad ambiental.
-
----
-
-# Descripción de la solución web
-
-La solución consiste en una aplicación web que permite a los clientes obtener un turno digital al ingresar al banco.
-
-El usuario ingresa su nombre y número de cuenta en un formulario dentro de una terminal digital. Al presionar el botón para generar el turno, el sistema crea automáticamente un número de turno único y lo agrega a la cola de espera.
-
-El sistema también muestra cuántas personas están antes en la fila y permite visualizar cuándo es el turno del usuario.
-
-Adicionalmente, el sistema incluye un panel de gestión donde el personal del banco puede llamar al siguiente cliente o eliminar turnos de la lista en caso de ser necesario.
+Descripción de función de la solución web:
+Al llegar al banco, el usuario utiliza terminal táctil para ingresar sus datos básicos (nombre y numero de cuenta). El sistema genera un ticket digital único,
+eliminando la necesidad de impresoras térmicas. Mediante el uso de estados en la aplicación web, el usuario podrá visualizar cuántas personas tiene por delante.
+El sistema actualizará automáticamente el estado del turno (ej: "Su turno es el próximo"), permitiendo al cliente esperar de forma más cómoda sin temor a perder su lugar.
+os empleados del banco dispondrán de una interfaz sencilla para "Llamar siguiente", "Marcar como ausente" o "Reasignar turno", lo que garantiza un flujo de trabajo ordenado
+y auditable, resolviendo el problema de los saltos de turno manuales.
 
 ---
 
@@ -111,13 +82,13 @@ Por ejemplo, cuando el usuario presiona el botón para generar su turno se ejecu
 
 ---
 
-## Explique para qué utilizó la directiva v-for dentro de su aplicación
+# Explique para qué utilizó la directiva v-for dentro de su aplicación
 
 La directiva **v-for** se utiliza para recorrer la lista de turnos que están en la cola de espera. Gracias a esta directiva se pueden mostrar todos los clientes que están esperando ser atendidos dentro de una tabla en la interfaz.
 
 ---
 
-## Describa en qué situación utilizó v-if y qué problema resuelve dentro de su interfaz
+# Describa en qué situación utilizó v-if y qué problema resuelve dentro de su interfaz
 
 La directiva **v-if** se utiliza para mostrar diferentes elementos dependiendo del estado de la aplicación.
 
@@ -127,7 +98,7 @@ Esto ayuda a que la interfaz sea más clara y evita que el usuario genere múlti
 
 ---
 
-## Explique cómo se realiza la validación de datos en su aplicación
+# Explique cómo se realiza la validación de datos en su aplicación
 
 La validación de datos se realiza verificando que el nombre del cliente tenga más de tres caracteres y que el número de cuenta tenga más de cuatro caracteres.
 

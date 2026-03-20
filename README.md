@@ -1,6 +1,4 @@
-# LABORATORIO1-bloque2
-
-# Sistema de Turnos Digital – Banco KAY
+Laboratorio 1 - Banco Kay
 
 Problemática planteada:
 El Banco KAY enfrenta desafíos operativos críticos en su sistema de gestión de flujo de clientes en sucursales físicas. El modelo actual basado en tickets de papel térmico ha generado una serie de ineficiencias que afectan tanto la experiencia del usuario como la sostenibilidad institucional. La pérdida o deterioro de los boletos físicos provoca constantes confusiones en el orden de atención, derivando en adelantos indebidos o retrasos significativos que alteran la cronología de los turnos. El uso masivo de papel no reciclable contraviene las políticas de responsabilidad ambiental y genera un gasto operativo constante en insumos de impresión.Para mitigar estos conflictos, se identifica la necesidad de una transición digital que centralice la asignación de turnos a través de una plataforma web accesible desde dispositivos móviles o terminales táctiles en el sitio. 
@@ -21,28 +19,22 @@ El sistema actualizará automáticamente el estado del turno (ej: "Su turno es e
 os empleados del banco dispondrán de una interfaz sencilla para "Llamar siguiente", "Marcar como ausente" o "Reasignar turno", lo que garantiza un flujo de trabajo ordenado
 y auditable, resolviendo el problema de los saltos de turno manuales.
 
----
-
-# Tecnologías utilizadas
-
-* **Vue.js**
+Tecnologías utilizadas
+ **Vue.js**
 * **HTML**
 * **CSS**
 * **JavaScript**
 
----
+Preguntas del laboratorio
 
-# Preguntas del laboratorio
-
-## ¿Qué es Vue.js y cuál es su función dentro de la página web desarrollada?
+¿Qué es Vue.js y cuál es su función dentro de la página web desarrollada?
 
 Vue.js es un framework de JavaScript que se utiliza para crear interfaces web interactivas. Permite conectar los datos del sistema con los elementos visuales de la página para que la información se actualice automáticamente sin necesidad de recargar la página.
 
 En este proyecto Vue.js se utiliza para manejar los turnos del banco, registrar clientes, actualizar la cola de espera y mostrar la posición del usuario dentro de la fila en tiempo real.
 
----
 
-## ¿Qué variables reactivas utilizó en su aplicación y cuál es la función de cada una?
+¿Qué variables reactivas utilizó en su aplicación y cuál es la función de cada una?
 
 Las variables reactivas utilizadas en el proyecto son:
 
@@ -64,31 +56,27 @@ Se utiliza para verificar si los datos ingresados cumplen con los requisitos mí
 **posicionEnCola**
 Calcula cuántas personas están delante del usuario dentro de la cola de espera.
 
----
 
-## Explique la diferencia entre las directivas v-bind y v-model
+Explique la diferencia entre las directivas v-bind y v-model
 
 La directiva **v-model** se utiliza para conectar los campos de entrada con las variables del sistema. Esto permite que cuando el usuario escriba en un input, el valor se guarde automáticamente en la variable correspondiente.
 
 La directiva **v-bind** se utiliza para enlazar atributos de HTML con datos dinámicos del sistema. En este proyecto se utiliza para habilitar o deshabilitar botones dependiendo de ciertas condiciones.
 
----
 
-## Mencione al menos un ejemplo de evento utilizado dentro de su aplicación
+Mencione al menos un ejemplo de evento utilizado dentro de su aplicación
 
 Un ejemplo de evento utilizado es el evento **click** en los botones.
 
 Por ejemplo, cuando el usuario presiona el botón para generar su turno se ejecuta una función que registra el turno dentro de la cola de espera.
 
----
 
-# Explique para qué utilizó la directiva v-for dentro de su aplicación
+Explique para qué utilizó la directiva v-for dentro de su aplicación
 
 La directiva **v-for** se utiliza para recorrer la lista de turnos que están en la cola de espera. Gracias a esta directiva se pueden mostrar todos los clientes que están esperando ser atendidos dentro de una tabla en la interfaz.
 
----
 
-# Describa en qué situación utilizó v-if y qué problema resuelve dentro de su interfaz
+Describa en qué situación utilizó v-if y qué problema resuelve dentro de su interfaz
 
 La directiva **v-if** se utiliza para mostrar diferentes elementos dependiendo del estado de la aplicación.
 
@@ -96,9 +84,8 @@ Por ejemplo, cuando el usuario todavía no tiene turno se muestra el formulario 
 
 Esto ayuda a que la interfaz sea más clara y evita que el usuario genere múltiples turnos al mismo tiempo.
 
----
 
-# Explique cómo se realiza la validación de datos en su aplicación
+Explique cómo se realiza la validación de datos en su aplicación
 
 La validación de datos se realiza verificando que el nombre del cliente tenga más de tres caracteres y que el número de cuenta tenga más de cuatro caracteres.
 

@@ -59,15 +59,11 @@ Calcula cuántas personas están delante del usuario dentro de la cola de espera
 
 Explique la diferencia entre las directivas v-bind y v-model
 
-La directiva v-model se utiliza para conectar los campos de entrada con las variables del sistema. Esto permite que cuando el usuario escriba en un input, el valor se guarde automáticamente en la variable correspondiente.
-
-La directiva v-bind se utiliza para enlazar atributos de HTML con datos dinámicos del sistema. En este proyecto se utiliza para habilitar o deshabilitar botones dependiendo de ciertas condiciones.
+La directiva v-model se utiliza para conectar los campos de entrada con las variables del sistema. Esto permite que cuando el usuario escriba en un input, el valor se guarde automáticamente en la variable correspondiente. La directiva v-bind se utiliza para enlazar atributos de HTML con datos dinámicos del sistema. En este proyecto se utiliza para habilitar o deshabilitar botones dependiendo de ciertas condiciones.
 
 
 Mencione al menos un ejemplo de evento utilizado dentro de su aplicación
-
 Un ejemplo de evento utilizado es el evento "click" en los botones.
-
 Por ejemplo, cuando el usuario presiona el botón para generar su turno se ejecuta una función que registra el turno dentro de la cola de espera.
 
 
@@ -79,16 +75,12 @@ La directiva v-for se utiliza para recorrer la lista de turnos que están en la 
 Describa en qué situación utilizó v-if y qué problema resuelve dentro de su interfaz
 
 La directiva v-if se utiliza para mostrar diferentes elementos dependiendo del estado de la aplicación.
-
-Por ejemplo, cuando el usuario todavía no tiene turno se muestra el formulario para registrar sus datos. Cuando el usuario ya tiene un turno asignado se muestra su ticket digital con su número de turno y la cantidad de personas que están delante de él.
-
-Esto ayuda a que la interfaz sea más clara y evita que el usuario genere múltiples turnos al mismo tiempo.
+Por ejemplo, cuando el usuario todavía no tiene turno se muestra el formulario para registrar sus datos. Cuando el usuario ya tiene un turno asignado se muestra su ticket digital con su número de turno y la cantidad de personas que están delante de él. Esto ayuda a que la interfaz sea más clara y evita que el usuario genere múltiples turnos al mismo tiempo.
 
 
 Explique cómo se realiza la validación de datos en su aplicación
 
 La validación de datos se realiza verificando que el nombre del cliente tenga más de tres caracteres y que el número de cuenta tenga más de cuatro caracteres.
-
 Si los datos ingresados no cumplen con estas condiciones, el botón para generar el turno permanece deshabilitado y no permite registrar un turno.
 
 La validación es importante porque evita que el sistema almacene información incompleta o incorrecta.

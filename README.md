@@ -38,47 +38,47 @@ En este proyecto Vue.js se utiliza para manejar los turnos del banco, registrar 
 
 Las variables reactivas utilizadas en el proyecto son:
 
-**cola**
+**cola:**
 Almacena todos los turnos de los clientes que están esperando ser atendidos.
 
-**miTicket**
+**miTicket:**
 Guarda el turno asignado al usuario que está utilizando la aplicación.
 
-**contadorId**
+**contadorId:**
 Se utiliza para generar automáticamente el número de turno para cada cliente.
 
-**form**
+**form:**
 Almacena los datos que el usuario ingresa en el formulario, como su nombre y número de cuenta.
 
-**formValido**
+**formValido:**
 Se utiliza para verificar si los datos ingresados cumplen con los requisitos mínimos antes de generar el turno.
 
-**posicionEnCola**
+**posicionEnCola:**
 Calcula cuántas personas están delante del usuario dentro de la cola de espera.
 
 
 Explique la diferencia entre las directivas v-bind y v-model
 
-La directiva **v-model** se utiliza para conectar los campos de entrada con las variables del sistema. Esto permite que cuando el usuario escriba en un input, el valor se guarde automáticamente en la variable correspondiente.
+La directiva v-model se utiliza para conectar los campos de entrada con las variables del sistema. Esto permite que cuando el usuario escriba en un input, el valor se guarde automáticamente en la variable correspondiente.
 
-La directiva **v-bind** se utiliza para enlazar atributos de HTML con datos dinámicos del sistema. En este proyecto se utiliza para habilitar o deshabilitar botones dependiendo de ciertas condiciones.
+La directiva v-bind se utiliza para enlazar atributos de HTML con datos dinámicos del sistema. En este proyecto se utiliza para habilitar o deshabilitar botones dependiendo de ciertas condiciones.
 
 
 Mencione al menos un ejemplo de evento utilizado dentro de su aplicación
 
-Un ejemplo de evento utilizado es el evento **click** en los botones.
+Un ejemplo de evento utilizado es el evento "click" en los botones.
 
 Por ejemplo, cuando el usuario presiona el botón para generar su turno se ejecuta una función que registra el turno dentro de la cola de espera.
 
 
 Explique para qué utilizó la directiva v-for dentro de su aplicación
 
-La directiva **v-for** se utiliza para recorrer la lista de turnos que están en la cola de espera. Gracias a esta directiva se pueden mostrar todos los clientes que están esperando ser atendidos dentro de una tabla en la interfaz.
+La directiva v-for se utiliza para recorrer la lista de turnos que están en la cola de espera. Gracias a esta directiva se pueden mostrar todos los clientes que están esperando ser atendidos dentro de una tabla en la interfaz.
 
 
 Describa en qué situación utilizó v-if y qué problema resuelve dentro de su interfaz
 
-La directiva **v-if** se utiliza para mostrar diferentes elementos dependiendo del estado de la aplicación.
+La directiva v-if se utiliza para mostrar diferentes elementos dependiendo del estado de la aplicación.
 
 Por ejemplo, cuando el usuario todavía no tiene turno se muestra el formulario para registrar sus datos. Cuando el usuario ya tiene un turno asignado se muestra su ticket digital con su número de turno y la cantidad de personas que están delante de él.
 

@@ -2,7 +2,7 @@ Laboratorio 1 - Banco Kay
 
 Integrantes:
 Astrid Marcela Arguello Guzman
-Ka<ren Beatriz Jandres Chaves
+Karen Beatriz Jandres Chaves
 Yessica Raquel Reyes Juarez
 
 Problemática planteada:
